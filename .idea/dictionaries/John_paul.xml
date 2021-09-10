@@ -2,6 +2,7 @@
   <dictionary name="John paul">
     <words>
       <w>dotenv</w>
+      <w>uuidv</w>
     </words>
   </dictionary>
 </component>

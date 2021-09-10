@@ -9,6 +9,14 @@ const postSchema = new Schema({
   body: {
     type: String,
     required: true,
+  },
+  photo: {
+    data: Buffer,
+    contentType: String
+  },
+  postedBy: {
+    type: Schema.Types.ObjectId,
+    ref: 'Users'
   }
 }, {
   timestamps: true,

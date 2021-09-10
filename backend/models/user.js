@@ -18,6 +18,7 @@ const userSchema = new Schema({
     required: true,
   },
   salt: String,
+  photo: String,
 }, {
   timestamps: true,
   toJSON: {
