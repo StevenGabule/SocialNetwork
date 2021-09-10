@@ -3,9 +3,7 @@ const Post = require('../models/post')
 const index = async (req, res) => {
   try {
     const posts = await Post.find({})
-    return res.json({
-      posts
-    })
+    return res.json({ posts })
   } catch (e) {
     console.log(e)
     return res.status(500).json({

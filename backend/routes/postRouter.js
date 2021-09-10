@@ -1,6 +1,5 @@
-const express = require('express');
+const router = require('express').Router();
 const {validate} = require("../validators");
-const router = express.Router();
 const {rules: createRules} = require('../validators/posts/create')
 const {index, create} = require("../controllers/PostController");
 
