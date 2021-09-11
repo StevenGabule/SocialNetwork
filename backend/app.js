@@ -2,6 +2,7 @@ const dotenv = require('dotenv')
 const cookieParser = require('cookie-parser')
 const express = require('express');
 const morgan = require('morgan')
+const cors = require('cors')
 const mongoose = require('mongoose')
 const app = express();
 dotenv.config()
@@ -13,6 +14,7 @@ mongoose
     console.log("DB Error: " + err)
   })
 
+app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({extended: true}));
 app.use(morgan('dev'))

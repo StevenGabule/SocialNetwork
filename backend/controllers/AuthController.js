@@ -18,8 +18,9 @@ const signIn = async (req, res) => {
     const {email, password} = req.body;
     const user = await User.findOne({email}).exec();
     if (!user.authenticate(password)) {
+      console.log(!user.authenticate(password))
       return res.status(401).json({
-        error: 'Password no matched!'
+        errors: 'Password no matched!'
       })
     }
 

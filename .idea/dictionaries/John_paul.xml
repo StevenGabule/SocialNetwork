@@ -1,7 +1,10 @@
 <component name="ProjectDictionaryState">
   <dictionary name="John paul">
     <words>
+      <w>axios</w>
       <w>dotenv</w>
+      <w>navbar</w>
+      <w>toggler</w>
       <w>uuidv</w>
     </words>
   </dictionary>
